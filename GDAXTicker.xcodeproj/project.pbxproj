@@ -10,6 +10,9 @@
 		042A5398ADF277A1138F1615 /* Pods_Shared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1D815A0E76DD5709413E575 /* Pods_Shared.framework */; };
 		3866C857A1E72F986E4C9B4B /* Pods_GDAXTicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A56ABFE168596DAEE543922F /* Pods_GDAXTicker.framework */; };
 		8D2E3C541FDB14B700035EE3 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2E3C531FDB14B700035EE3 /* AccountViewController.swift */; };
+		8D4FF6371FDF13410036C52D /* AccountEmbedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4FF6361FDF13410036C52D /* AccountEmbedViewController.swift */; };
+		8D4FF6391FDFA3110036C52D /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4FF6381FDFA3110036C52D /* OrderViewController.swift */; };
+		8D4FF63B1FDFD55B0036C52D /* BuySellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4FF63A1FDFD55B0036C52D /* BuySellViewController.swift */; };
 		9F4F90671FD2E6CB007793B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4F90661FD2E6CB007793B3 /* AppDelegate.swift */; };
 		9F4F906C1FD2E6CB007793B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F4F906A1FD2E6CB007793B3 /* Main.storyboard */; };
 		9F4F906E1FD2E6CB007793B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F4F906D1FD2E6CB007793B3 /* Assets.xcassets */; };
@@ -121,6 +124,9 @@
 		6434A6DEFC4A7CC7444016C0 /* Pods-Shared.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shared.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Shared/Pods-Shared.debug.xcconfig"; sourceTree = "<group>"; };
 		7D994C6A63896727E4EEA031 /* Pods-GDAXTicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GDAXTicker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GDAXTicker/Pods-GDAXTicker.debug.xcconfig"; sourceTree = "<group>"; };
 		8D2E3C531FDB14B700035EE3 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		8D4FF6361FDF13410036C52D /* AccountEmbedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountEmbedViewController.swift; sourceTree = "<group>"; };
+		8D4FF6381FDFA3110036C52D /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
+		8D4FF63A1FDFD55B0036C52D /* BuySellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuySellViewController.swift; sourceTree = "<group>"; };
 		9F4F90631FD2E6CB007793B3 /* GDAXTicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GDAXTicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F4F90661FD2E6CB007793B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F4F906B1FD2E6CB007793B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -326,6 +332,9 @@
 			children = (
 				9FC5C2081FD2E7AB007D4651 /* TickerViewController.swift */,
 				8D2E3C531FDB14B700035EE3 /* AccountViewController.swift */,
+				8D4FF6361FDF13410036C52D /* AccountEmbedViewController.swift */,
+				8D4FF6381FDFA3110036C52D /* OrderViewController.swift */,
+				8D4FF63A1FDFD55B0036C52D /* BuySellViewController.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -841,7 +850,10 @@
 			files = (
 				9FC5C2171FD31956007D4651 /* TickTableViewCell.swift in Sources */,
 				8D2E3C541FDB14B700035EE3 /* AccountViewController.swift in Sources */,
+				8D4FF6371FDF13410036C52D /* AccountEmbedViewController.swift in Sources */,
+				8D4FF6391FDFA3110036C52D /* OrderViewController.swift in Sources */,
 				9FC5C2441FD41ACA007D4651 /* UserDefault.swift in Sources */,
+				8D4FF63B1FDFD55B0036C52D /* BuySellViewController.swift in Sources */,
 				9FC5C2091FD2E7AB007D4651 /* TickerViewController.swift in Sources */,
 				9F4F90671FD2E6CB007793B3 /* AppDelegate.swift in Sources */,
 			);
@@ -1097,7 +1109,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LJV7W2A96H;
 				INFOPLIST_FILE = GDAXTicker/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.abarbier.GDAXTicker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1118,7 +1130,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LJV7W2A96H;
 				INFOPLIST_FILE = GDAXTicker/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.abarbier.GDAXTicker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1210,7 +1222,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = UI/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.thomasricouard.UI;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -1238,7 +1250,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = UI/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.thomasricouard.UI;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";

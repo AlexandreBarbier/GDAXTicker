@@ -25,7 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         GDAX.market.product(productId: "LTC-EUR").getLastTick { (tick, error) in
             let content = UNMutableNotificationContent()
             content.title = "LTC-EUR"
-            content.body = tick!.price ?? ""
+            content.body = String(format:"%0.2f", Float(tick!.price!) ?? 0.0) 
             content.sound = UNNotificationSound.default()
             let trigger = UNTimeIntervalNotificationTrigger.init(timeInterval: 2, repeats: false)
             let request = UNNotificationRequest.init(identifier: "ltc-eur", content: content, trigger: trigger)
